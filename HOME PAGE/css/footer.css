@@ -1,0 +1,17 @@
+/* Contact box overlayout*/
+.contact-cover {
+  padding-top: 80px ;
+}
+
+
+/* Footer */
+footer { width:100%; padding-bottom:0 !important;}
+footer h4{ color:#fff; font-weight:700; margin-bottom:20px; font-size: 40px; }
+footer p{ margin-bottom:0; font-size: 20px; }
+footer .google-maps{ width:100%; height:210px; overflow:hidden;}
+footer .contact-box{ width:100%; float:left; margin-bottom:20px;}
+footer .pad{ margin-top:20px; }
+footer .head{ font-size: 25px; font-weight: 600; }
+footer .contact-box .icon{ width:15%; float:left; }
+footer .contact-box .icon i{font-size:20px; color:#ccc;}
+footer .contact-box .content{ width:85%; float:left;}

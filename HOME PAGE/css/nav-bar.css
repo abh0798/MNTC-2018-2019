@@ -1,0 +1,130 @@
+.navbar-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #1f1975;
+	z-index: 10000;
+	height: 150px ;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.navbar-header .navbar-inner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+.navbar-header img,
+.navbar-header nav {
+	display: inline-block;
+	position: relative;
+}
+
+.navbar-header img,
+.navbar-header nav a {
+	line-height: 150px ;
+  padding-top: 30px ;
+}
+
+.navbar-header img {
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: left;
+}
+
+.navbar-header nav {
+	float: right;
+}
+
+.navbar-header nav a {
+	color: #aaa;
+	font-weight: 700;
+	margin: 0 0 0 20px;
+	font-size: 1.4em;
+  margin-bottom: 5 px ;
+}
+
+.navbar-header nav a:hover {
+	color: #a9ece6;
+  text-decoration: none;
+}
+
+/* Transitions and class for reduced height */
+.navbar-header img,
+.navbar-header nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.navbar-header.navbar-header-shrink {
+	height: 90px;
+}
+
+.navbar-header.navbar-header-shrink img,
+.navbar-header.navbar-header-shrink nav a {
+	line-height: 90px;
+}
+
+.navbar-header.navbar-header-shrink img {
+	font-size: 2em;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+	
+	.navbar-header .navbar-inner {
+		width: 100%;
+	}
+
+	.navbar-header img,
+	.navbar-header nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+	}
+
+	.navbar-header img,
+	.navbar-header nav a {
+		line-height: 115px;
+	}
+
+	.navbar-header nav a {
+		margin: 0 10px;
+	}
+
+	.navbar-header.navbar-header-shrink img,
+	.navbar-header.navbar-header-shrink nav a {
+		line-height: 45px;
+	}
+
+	.navbar-header.navbar-header-shrink img {
+		font-size: 2em;
+	}
+
+	.navbar-header.navbar-header-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.navbar-header nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.navbar-header nav a,
+	.navbar-header.navbar-header-shrink nav a {
+		line-height: 1;
+	}
+}
